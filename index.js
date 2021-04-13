@@ -6,7 +6,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     //List connected servers
     console.log('Wrestling intros bot live on:');
-    CumbiaBotClient.guilds.cache.forEach((guild) => {
+    client.guilds.cache.forEach((guild) => {
       console.log(`○ ${guild.name}`);
     });
   });
@@ -20,11 +20,11 @@ client.on('ready', () => {
             const voice_connection = await voice_channel.join()
             const dispatcher = voice_connection.play("bin/cumbia.mp3", {seek : 27});
             dispatcher.on('start', () => {
-            console.log('cumbia.mp3 is now playing!');
+              console.log('cumbia.mp3 is now playing!');
             });
             dispatcher.on('finish', () => {
-            console.log('cumbia.mp3 has finished playing!');
-            voice_channel.leave();
+              console.log('cumbia.mp3 has finished playing!');
+              voice_channel.leave();
             });
             dispatcher.on('error', console.error);
         }
