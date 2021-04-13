@@ -1,0 +1,15 @@
+{
+    "discord_secret_token" : "PASTE YOUR TOKEN HERE",
+    "audios": [
+        {
+            "name": "User name not really used tho",
+            "discord_id": "Paste the ID here",
+            "audio" : "songs/your-audio.mp3"
+        },
+        {
+            "name": "User name not really used tho",
+            "discord_id": "Paste the other ID here",
+            "audio" : "songs/your-audio.mp3"
+        }
+    ]
+}

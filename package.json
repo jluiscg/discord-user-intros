@@ -1,0 +1,19 @@
+{
+  "name": "wrestling-intros-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that plays a specific song wh for each user when they enter a voice channel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.3.0"
+  },
+  "devDependencies": {},
+  "author": "Luis Cortes",
+  "license": "ISC"
+}
